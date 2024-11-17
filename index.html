@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Sacramento&family=Work+Sans:wght@100;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Alpine JS-->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- App -->
+    <script src="src/app.js"></script>
+
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><span>Tiara</span>Persada</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Profil</a>
+        <a href="#jenis" class="dropdown">Pilihan Mobil <i data-feather="chevron-down"></i></a>
+        <a href="#harga">Daftar Harga</a>
+        <a href="#kontak">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- Search Start -->
+    <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box"><i data-feather="search"></i></label>
+    </div>
+      <!-- Search End -->
+
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="hero" id="home">
+        <main class="content">
+            <h1>Pilihan Terbaik Untuk <span>Kenyamanan Perjalanan</span> Anda</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, reprehenderit.</p>
+            <a href="#" class="cta"> Pesan Sekarang </a>
+        </main>
+    </section>
+    <!-- Hero End -->
+
+    <!-- About Start -->
+    <section id="about" class="about">
+        <h2><span>Tentang</span> Kami </h2>
+
+        <div class="row">
+            <div class="about-img">
+                <img src="img/tentang-kami.jpg" alt="Tentang Kami">
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe debitis dolorem dolor quaerat sit neque, doloribus voluptate amet maiores est.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis porro veritatis consequuntur quibusdam repellat enim dolorum error quaerat nemo saepe.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- Menu Start -->
+    <section id="jenis" class="jenis">
+        <h2><span>Pilihan Mobil</span> Kami </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam porro quos magni blanditiis!</p>
+
+        <div class="row">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <a href="#" class="item-detail-button">
+                        <img src="img/mobil/1.png" alt="Bus" class="menu-card-img">
+                    </a>
+                </div>
+                <h3 class="menu-card-title"> - Bus Medium - </h3>
+                <div class="menu-card-price">
+                    <ul>
+                        <li class="ket">Mulai Dari Rp.2.000.000</li>
+                        <li class="ket">Tersedia Paket :</li>
+                        <li class="ket">Platinum ALL IN</li>
+                        <li class="ket">Premium (BBM + Driver)</li>
+                        <li class="ket">Kapasitas : 31 - 33 Orang</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">
+                    <a href="#" class="item-detail-button">
+                        <img src="img/mobil/2.png" alt="Hi Ace" class="menu-card-img">
+                    </a>
+                </div>
+                <h3 class="menu-card-title"> - Hi Ace - </h3>
+                <div class="menu-card-price">
+                    <ul>
+                        <li class="ket">Mulai Dari Rp.1.000.000</li>
+                        <li class="ket">Tersedia Paket :</li>
+                        <li class="ket">Platinum ALL IN</li>
+                        <li class="ket">Premium (BBM + Driver)</li>
+                        <li class="ket">Kapasitas : 10 - 14 Orang</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">
+                    <a href="#" class="item-detail-button">
+                        <img src="img/mobil/3.png" alt="Luxury" class="menu-card-img">
+                    </a>
+                </div>
+                <h3 class="menu-card-title"> - Luxury Car - </h3>
+                <div class="menu-card-price">
+                    <ul>
+                        <li class="ket">Mulai Dari Rp.800.000</li>
+                        <li class="ket">Tersedia Paket :</li>
+                        <li class="ket">ALL IN (BBM + Driver)</li>
+                        <li class="ket">Dengan Driver / Lepas Kunci </li>
+                        <li class="ket">Land Cruser, Alphard Vellfire, Pajero Sport, Fortuner</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu-card">
+                <div class="menu-image">
+                    <a href="#" class="item-detail-button">
+                        <img src="img/mobil/4.png" alt="Regular" class="menu-card-img">
+                    </a>
+                </div>
+                <h3 class="menu-card-title"> - Regular Car - </h3>
+                <div class="menu-card-price">
+                    <ul>
+                        <li class="ket">Mulai Dari Rp.800.000</li>
+                        <li class="ket">Tersedia Paket :</li>
+                        <li class="ket">ALL IN (BBM + Driver)</li>
+                        <li class="ket">Dengan Driver / Lepas Kunci </li>
+                        <li class="ket">Avanza , Xpander, Raize</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <a href="" class="tombol">
+            <span> Hitung Harga Perjalanan </span>
+        </a>
+    </section>
+    <!-- Menu End -->
+
+    <!-- Kontak Start -->
+    <section id="kontak" class="kontak">
+        <h2><span>Kontak</span> Kami</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, laudantium!</p>
+
+        <div class="row">
+            <div class="maps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d498.057624911428!2d104.77805100381377!3d-2.969501264141102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b7643b3466cff%3A0x2c4d0115a3be29bc!2sRental%20Mobil%20Palembang%20Tiara%20Persada!5e0!3m2!1sid!2sid!4v1699364098474!5m2!1sid!2sid" 
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.640702478011!2d104.75768625242273!3d-2.9192617975696704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b76acd36b5591%3A0x7d502dea3132f72f!2sSriwalk%20B!5e0!3m2!1sid!2sid!4v1699364244780!5m2!1sid!2sid"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </div>
+            <!-- <p>Kantor Pusat Dan Pool Bus</p> -->
+            <form action="">
+                <div class="input-group">
+                    <i data-feather="user"></i>
+                    <input type="text" placeholder="Nama">
+                </div>
+                <div class="input-group">
+                    <i data-feather="mail"></i>
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="input-group">
+                    <i data-feather="phone"></i>
+                    <input type="number" placeholder="No HP">
+                </div>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+    <!-- Kontak End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <div class="social">
+            <a href="#"><i data-feather="instagram"></i></a>
+            <a href="#"><i data-feather="facebook"></i></a>
+        </div>
+
+        <div class="link">
+            <a href="#home">Home</a>
+            <a href="#about">Profil</a>
+            <a href="#jenis">Pilihan Mobil</a>
+            <a href="#harga">Daftar Harga</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+
+        <div class="credit">
+            <p>Created by <span> Tiara Persada</span> | &copy; 2023 </p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Modal Box Item Start -->
+
+    <div class="modal" id="item-detail-modal">
+        <div class="modal-container">
+            <a href="#" class="close-icon"><i data-feather="x"></i></a>
+            <div class="modal-content">
+                <img src="img/mobil/1.jpg" alt="Bus">
+                <div class="mobil-content">
+                    <h3>- Bus Medium -</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur dolore velit maxime quisquam? Ipsum, reprehenderit vero quia incidunt ratione est?</p>
+                    <div class="menu-card-price">Mulai Dari Rp.4.000.000</div>
+                    <a href="#"><i data-feather="tag"></i> <span>Hitung Harga</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Box Item End -->
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- JavaScripst -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
